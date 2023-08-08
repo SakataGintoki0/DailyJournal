@@ -1,0 +1,25 @@
+<%- include("partials/header") -%>
+
+<h1>Home</h1>
+
+<p>
+    <%= startingContent %>
+</p>
+
+
+<% for(var i = 0; i< posts.length; i++){ %>
+    <div class="post">
+        <h2> <%= posts[i].title %> </h2>
+        <p>
+            <% var myString = posts[i].post; %>
+            <% var summary = myString.substring(0, 100); %>
+            <% var link = "/posts/"+ encodeURI(posts[i].title); %> 
+            <%= summary %>... <a href= <%= link %> > Read more </a>
+        </p>
+    </div>
+
+<% } %>
+
+<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique inventore ut illo sit voluptates, dolorum repellat! Molestiae est repellendus enim cum aperiam recusandae vitae consectetur unde voluptates alias laudantium voluptatibus similique dolorum praesentium facere incidunt illum neque, impedit laboriosam atque, reiciendis libero? Obcaecati praesentium deserunt aliquid tempore officia ipsa a. Optio fugiat voluptatibus corporis officia quaerat quo aliquam sed repellat dolore sapiente ab fugit minus magnam enim, illo suscipit voluptates dolor inventore reprehenderit debitis adipisci delectus hic! Minus molestias, dolorum consectetur asperiores quos officia, quaerat doloribus eum ut tempore magni? Veritatis adipisci omnis sunt! Quos nesciunt atque totam, expedita veritatis voluptatum qui ipsa natus at ex, eveniet corporis id illum et vel vitae aperiam officiis maxime. Ad consectetur consequatur neque voluptas, obcaecati blanditiis ullam quis enim minus temporibus ipsam recusandae quos ipsum eum vero eos amet non alias repudiandae. Earum ipsum harum voluptates assumenda. Sit voluptas culpa eveniet aperiam recusandae odio! Adipisci repudiandae doloribus porro molestias, et nulla amet asperiores molestiae incidunt qui ipsam animi distinctio rem reiciendis optio vel voluptatibus quaerat sint. Reiciendis asperiores officia, dignissimos veritatis magnam corporis quos recusandae ipsam ratione sed consequuntur labore debitis est! Eligendi iste hic enim asperiores quasi perferendis voluptatum pariatur dicta, quibusdam, molestiae voluptatem nam repellat aspernatur! Aperiam optio quidem, quaerat iure excepturi cum dolorem possimus tenetur, incidunt repudiandae sapiente consequatur architecto illo et veniam. Ab, architecto. Aspernatur non omnis accusantium incidunt quae sed recusandae nulla atque amet optio fugiat, culpa dignissimos totam ipsum expedita, neque doloribus eaque odit reiciendis voluptas? Placeat debitis illo nostrum, aliquid dolore eum sequi, maxime rerum accusantium dolores sit neque? Maiores iure deleniti nesciunt quae vel delectus est exercitationem voluptatum libero necessitatibus et, sapiente voluptates, blanditiis earum saepe nobis quasi cupiditate, magnam quaerat repellendus. Excepturi dolorem voluptate qui. Itaque vitae architecto minus reprehenderit odio accusamus nulla molestiae iusto nam. Aliquam adipisci deserunt necessitatibus voluptatum nobis! Non fuga quas reiciendis suscipit autem sed consectetur sapiente aut commodi, nobis id eaque odit a magni hic. Minus, quae repellat repellendus ex quos vitae? Porro, laboriosam deserunt animi ut, aspernatur quas sint, voluptate quo obcaecati nostrum mollitia assumenda neque! Sequi quas voluptatem sit culpa dolorem possimus aliquam earum nobis aperiam praesentium iure, eius enim officiis esse laboriosam assumenda nesciunt laborum ea quos rerum aliquid! Eligendi dolorum, natus voluptas voluptates quam non saepe atque perspiciatis corrupti quas ab minima ea alias vero vel, ut nisi eius praesentium, sapiente molestiae odit quae nemo! Fuga cum a itaque fugiat perferendis illum modi vitae iusto ab nostrum eaque eligendi nulla, dignissimos optio, veritatis animi quia recusandae unde eos qui quisquam. Voluptates autem eligendi facilis voluptatem accusamus voluptatibus quisquam dignissimos, id, minus explicabo cumque architecto ipsum sed! Fuga facilis nobis quam quasi, soluta laborum laudantium velit iusto? Ratione veniam, labore repellat voluptatum ab pariatur dolor quae! Fugiat saepe maxime veniam facilis soluta in nam autem quidem velit odio. At quia quas a maiores optio harum obcaecati atque iste temporibus. Rerum, qui, sapiente aliquam beatae id a labore exercitationem, voluptatibus cumque eos fugit odit ratione maxime saepe. -->
+
+<%- include("partials/footer") -%>
